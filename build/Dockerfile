@@ -1,7 +1,7 @@
 FROM threema/webrtc-build-base:latest
 
 # Export env variables
-ENV GYP_DEFINES="OS=android"
+ENV GYP_DEFINES="OS=android ffmpeg_branding=\"Chrome\" proprietary_codecs=true rtc_use_h264=true"
 
 # Update code
 WORKDIR /webrtc/src
